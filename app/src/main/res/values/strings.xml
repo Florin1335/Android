@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WaterDrinkRemainder</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_settings">Settings</string>
+    <string name="fragment_dialog_title_text">Pentru a putea calcula cantitatea de apă necesară, completați următoarele câmpuri.</string>
+    <string name="fragment_dialog_hint_varsta">Vârsta (ani)</string>
+    <string name="fragment_dialog_hint_greutate">Greutate (kg)</string>
+    <string name="fragment_dialog_button_text">Calculează</string>
+    <string name="_2l">2 L</string>
+    <string name="_1_5_l">1,5 L</string>
+    <string name="_1_l">1 L</string>
+    <string name="_500_ml">500 ML</string>
+    <string name="_250_ml">250 ML</string>
+    <string name="_100_ml">100 ML</string>
+    <string name="ap_ml">Apă (ML)</string>
+    <string name="adaug">Add</string>
+    <string name="settings_title_about_you">Informații</string>
+    <string name="preferences_varsta">Vârsta</string>
+    <string name="preferences_greutate">Greutate</string>
+    <string name="history_title">Istoric din ultima săptămână</string>
+    <string name="signin_title">Pentru a folosi aplicația este necesară autentificarea cu Google.</string>
+    <string name="button_sign_out" />
+</resources>

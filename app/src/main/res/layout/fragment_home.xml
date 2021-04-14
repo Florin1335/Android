@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:max="0"
+        android:minHeight="100sp"
+        android:progress="0"
+        android:scaleX="7"
+        android:scaleY="10" />
+
+    <TextView
+        android:id="@+id/home_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/home_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:textSize="30sp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        app:columnCount="2"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/button_100ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="@string/_100_ml"
+            android:textColor="@android:color/black"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_glass_of_water"
+            app:iconTint="@null"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button_250ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="@string/_250_ml"
+            android:textColor="@android:color/black"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_glass_of_water"
+            app:iconTint="@null"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button_500ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="@string/_500_ml"
+            android:textColor="@android:color/black"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_water_bottle"
+            app:iconTint="@null"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button_1000ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="@string/_1_l"
+            android:textColor="@android:color/black"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_water_bottle"
+            app:iconTint="@null"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button_1500ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_5_l"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_water_bottle_big"
+            app:iconTint="@null"
+            android:textColor="@android:color/black"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:layout_margin="5sp"
+            app:layout_gravity="fill"/>
+
+        <Button
+            android:id="@+id/button_2000ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2l"
+            app:backgroundTint="#FFFFFF"
+            app:icon="@drawable/ic_water_bottle_big"
+            app:iconTint="@null"
+            android:textColor="@android:color/black"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            android:layout_margin="5sp"
+            app:layout_gravity="fill"/>
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        app:columnCount="2"
+        app:rowCount="1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:gravity="fill"
+            app:boxCornerRadiusBottomEnd="@dimen/activity_horizontal_margin"
+            app:boxCornerRadiusBottomStart="@dimen/activity_horizontal_margin"
+            app:boxCornerRadiusTopEnd="@dimen/activity_horizontal_margin"
+            app:boxCornerRadiusTopStart="@dimen/activity_horizontal_margin"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_adauga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/ap_ml"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_adauga"
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:gravity="fill"
+            android:text="@string/adaug"
+            app:icon="@drawable/ic_drinking_water"
+            app:iconTint="@null"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/settings_title_about_you">
+
+        <EditTextPreference
+            app:key="settings_varsta"
+            app:title="@string/preferences_varsta"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="settings_greutate"
+            app:title="@string/preferences_greutate"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Alte setari">
+        <Preference
+            android:key="@string/button_sign_out"
+            android:title="Sign Out"
+            android:summary="Ieșire din contul Google"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
